@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef, type ElementType } from "react";
-import { gsap } from "@/lib/gsap/registerPlugins";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { gsap } from "@/lib/gsap/registerPlugins";
+import { useEffect, useRef, type ElementType } from "react";
 
 interface RevealTextProps {
   children: string;
@@ -59,7 +59,6 @@ export function RevealText({
   }, [prefersReducedMotion, delay, splitBy, children]);
 
   return (
-    // @ts-expect-error -- polymorphic ref via generic ElementType
     <Tag ref={containerRef} className={className} aria-label={children}>
       {pieces.map((piece, i) => (
         <span

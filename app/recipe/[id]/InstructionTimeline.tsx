@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
 import { ScrollTrigger, registerGsapPlugins } from "@/lib/gsap/registerPlugins";
+import { useEffect, useRef, useState } from "react";
 
 interface InstructionTimelineProps {
   steps: string[];
@@ -15,7 +15,7 @@ interface InstructionTimelineProps {
  */
 export function InstructionTimeline({ steps }: InstructionTimelineProps) {
   const [activeStep, setActiveStep] = useState(0);
-  const stepRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const stepRefs = useRef<(HTMLLIElement | null)[]>([]);
 
   useEffect(() => {
     registerGsapPlugins();
