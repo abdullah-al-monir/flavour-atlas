@@ -2,6 +2,8 @@
 
 A cinematic, scroll-driven recipe archive built on Next.js 16, Tailwind CSS 4, GSAP, and TheMealDB's free API. See the original project brief for full design rationale — this README covers what's in this scaffold and how to run it.
 
+## LIve Link: [https://flavour-atlas-chi.vercel.app/](https://flavour-atlas-chi.vercel.app/)
+
 ## Getting started
 
 ```bash
